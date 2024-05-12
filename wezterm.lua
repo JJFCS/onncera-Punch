@@ -1,5 +1,5 @@
 local wezterm = require "wezterm" -- PULL IN THE WEZTERM API
-local config  = {}                -- THIS TABLE WILL HOLD THE CONFIGURATION
+local config  = {}                -- THIS TABLE HOLDS THE CONFIGURATION
 
 -- aids in providing clearer error messages (config_builder)
 if wezterm.config_builder then
