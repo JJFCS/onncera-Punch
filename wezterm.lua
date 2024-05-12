@@ -1,7 +1,7 @@
 local wezterm = require "wezterm" -- PULL IN THE WEZTERM API
 local config  = {}                -- THIS TABLE WILL HOLD THE CONFIGURATION
 
--- config_builder will help provide clearer error messages
+-- aids in providing clearer error messages (config_builder)
 if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
@@ -18,10 +18,10 @@ config.font         = wezterm.font_with_fallback {
 	{ family = 'Iosevka Nerd Font',     weight = 'Medium'  },
 	'nonicons',
 }
-config.font_size           = 9     -- can use fractional point sizes, such as 13.3
+config.font_size           =  9    -- can use fractional point sizes, such as 13.3
 
-config.line_height         = 1     -- scales computed line height to adjust spacing between successive rows  of text
-config.cell_width          = 1     -- scales computed cell width  to adjust spacing between successive cells of text
+config.line_height         =  1    -- scales computed line height to adjust spacing between successive rows  of text
+config.cell_width          =  1    -- scales computed cell width  to adjust spacing between successive cells of text
 
 config.underline_thickness =  2    -- overrides the base thickness of underlines
 config.underline_position  = -1    -- negative number to offset the baseline of the font
